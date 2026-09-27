@@ -1,0 +1,150 @@
+text,label
+why is there a fee for a payment on my card?,card_payment_fee_charged
+why was i not allowed to do a transfer to a beneficiary?,beneficiary_not_allowed
+i don't have my mobile device and am unable to make the payment because i forgot my details.,lost_or_stolen_phone
+there was an extra fee when i paid with the card.,card_payment_fee_charged
+what are the reasons to be charged a fee on card payments?,card_payment_fee_charged
+i need to cancel my recent transfer quickly since i made a mistake. please help before it goes through.,cancel_transfer
+are top-ups allowed using apple pay?,apple_pay_or_google_pay
+why was a fee added to my bill when i used my card?,card_payment_fee_charged
+why was there an extra charge because i used my card to pay?,card_payment_fee_charged
+can my account me accessed by a thief?  i was mugged.,lost_or_stolen_phone
+what do i do if my card is about to expire?,card_about_to_expire
+do you give out visa or mastercards?,visa_or_mastercard
+why have i been charged a fee for using my card?,card_payment_fee_charged
+my account was charged a fee. when did you start charging extra for card payments?,card_payment_fee_charged
+how can i alteration my pin?,change_pin
+what do i do if my card expires soon?,card_about_to_expire
+how do i know which payments i make will have additional fees? where can i find this information online?,card_payment_fee_charged
+what should i do if i want to get another card for someone in my family?,getting_spare_card
+which currencies do you work with?,supported_cards_and_currencies
+why am i being charge a fee when using an atm?,card_payment_fee_charged
+"my phone was stolen, what should i do?",lost_or_stolen_phone
+how can i top up with apple pay?,apple_pay_or_google_pay
+why is a payment i made reverted back to my account?,change_pin
+are their certain cash machines where i can change my pin?,change_pin
+i can't use the app because i got mugged yesterday and they took everything. i need some help.,lost_or_stolen_phone
+please give me a mastercard instead.,visa_or_mastercard
+i think a fee was applied for paying with a card.,card_payment_fee_charged
+(A AND NOT B) OR (C AND NOT D) OR (B AND NOT C AND D),change_pin
+my google pay seems to be acting up.,apple_pay_or_google_pay
+"who do i talk to, to cancel a transfer?",cancel_transfer
+what do i do if my smart phone was stolen?,lost_or_stolen_phone
+"i want to add money to my card, what payments do you accept?",supported_cards_and_currencies
+why was there a fee for paying by card?,card_payment_fee_charged
+"cancel my transfer, please.",cancel_transfer
+which one are you?  visa or mastercard?,visa_or_mastercard
+can i use top-up with apple pay?,apple_pay_or_google_pay
+will i be sent a new card before mine expires?,card_about_to_expire
+why do some of my payments have fees?  i don't understand.,card_payment_fee_charged
+i need a second card on this account for my daughter.,getting_spare_card
+"my card will expire soon, do i need to order a new one?",card_about_to_expire
+can i choose from either visa or mastercard?,visa_or_mastercard
+i was charged and shouldn't have been charged when using my card!,card_payment_fee_charged
+my phone is at the hotel.  how can i use the app?,lost_or_stolen_phone
+how can i reset my pin?,change_pin
+"i want to deposit funds, what payments are accepted?",supported_cards_and_currencies
+does it matter if i use visa or mastercard?,visa_or_mastercard
+i need another card,getting_spare_card
+can i change my pin at a nearby atm when in spain? i think someone saw my pin and i need to change it but am on vacation.,change_pin
+i payed with the card and there was an extra fee?,card_payment_fee_charged
+"i didn't want to make a transaction, i want to revert it",cancel_transfer
+can i use a credit card from the us to top up?,supported_cards_and_currencies
+am i allowed to transfer money to a beneficiary?,beneficiary_not_allowed
+"i think someone saw my pin and i am on vacation in spain, can i change it locally at an atm?",change_pin
+are there certain cards and currencies you support?,supported_cards_and_currencies
+my apple pay top up with my american express card is not working? please tell me why,apple_pay_or_google_pay
+i have been trying to exchange this for crypto but the app won't work could you please help me?,beneficiary_not_allowed
+my transfer failed to a beneficiary,beneficiary_not_allowed
+can i change my pin remotely?,change_pin
+can i use this app for any currency?,supported_cards_and_currencies
+need help with google pay top up,apple_pay_or_google_pay
+"i couldn't transfer money to my bank, why not?",beneficiary_not_allowed
+is it possible for a transaction to be cancelled?,cancel_transfer
+i need to cancel my recent transfer as soon as possible. i made an error there. please help before it goes through.,cancel_transfer
+"soon my card will expire, how do i get a new one?",card_about_to_expire
+i want to top up my account. can i do it with google pay?,apple_pay_or_google_pay
+"i would like some more physical cards, what is my limit?",getting_spare_card
+can i use my apple watch to fill my gas tank?,apple_pay_or_google_pay
+how much would an extra card cost?,getting_spare_card
+"if i wanted to change my pin, how would i do that?",change_pin
+how do i replace a card that's going to expire?,card_about_to_expire
+the transfer to an account wasn't allowed is there any other way for me to do it,beneficiary_not_allowed
+i messed up a transfer and need to reverse it.,cancel_transfer
+help me cancel a transaction.,cancel_transfer
+use my credit to add money,supported_cards_and_currencies
+"i needed to make a payment on my account, but i typed in the incorrect number.  the app won't allow me to cancel this transaction.  i need it cancelled asap!!",cancel_transfer
+can i top up using my apple watch?,apple_pay_or_google_pay
+i would like a second card.,getting_spare_card
+can i choose whether i receive a visa or a mastercard card?,visa_or_mastercard
+why top up is not working even if i got my american express in apple bay?,apple_pay_or_google_pay
+i need to know if you will accept my credit card.,supported_cards_and_currencies
+i have a fee showing from last time i used my card.,card_payment_fee_charged
+i tried transferring to an account but it won't let me.,beneficiary_not_allowed
+how do i order a new card when my old one is ready to expire?,card_about_to_expire
+how is it possible to add another card to account,getting_spare_card
+i would like an extra card.,getting_spare_card
+i would like more physical cards,getting_spare_card
+i misplaced my phone so i can't use the app! does this mean i can't use my card?,lost_or_stolen_phone
+want to get a new card in china,card_about_to_expire
+will you send me a new card in china?,card_about_to_expire
+why did my transfer to a beneficiary fail?,beneficiary_not_allowed
+why cant i transfer to my account?,beneficiary_not_allowed
+an extra fee has been added to my card payment is this correct?,card_payment_fee_charged
+is it acceptable to use either visa or mastercard?,visa_or_mastercard
+please help me change my pin.,change_pin
+how do i cancel a recent transfer?,cancel_transfer
+can i change my pin at any atm?,change_pin
+"so, i was just charged for my recent atm withdrawal and any withdrawal prior to this has been free. what is the issue here?",card_payment_fee_charged
+i just have one additional card from the usa. do you support that?,supported_cards_and_currencies
+"my card is going to expire, what do i do?",card_about_to_expire
+does it cost extra to send out more than one card?,getting_spare_card
+how can i change my pin even though i'm out of the country in austria at the moment?,change_pin
+my card expires very soon.  what is the cost and delivery time to get a new one?,card_about_to_expire
+i lost my phone. can i use my card without the app?,lost_or_stolen_phone
+is my credit card supported for top-ups?,supported_cards_and_currencies
+why am i not allowed to transfer money to my cryptocurrency exchange?,beneficiary_not_allowed
+i used the wrong account.,cancel_transfer
+"if i get another card, what kind of fees am i looking at?",getting_spare_card
+"i would like to give another card to my daughter, how can i proceed?",getting_spare_card
+what services can i use to top up?,apple_pay_or_google_pay
+"my card has an expiration date, will you send a new one automatically?",card_about_to_expire
+how do i change the pin?,change_pin
+why wont my american express work to add money,supported_cards_and_currencies
+can i change my pin at an atm?,change_pin
+i need to cancel a transaction immediately.,cancel_transfer
+"hi, i'm trying to by some crypto and the app isn't allowing it. i really want to exchange this, what am i doing wrong?",beneficiary_not_allowed
+Nants ingonyama bagithi baba,card_about_to_expire
+what are the various currencies and cards that you offer support for?,supported_cards_and_currencies
+cancel a transaction,cancel_transfer
+is there a way to do top up with apple pay,apple_pay_or_google_pay
+i am trying to complete a transfer but i keep getting an error message.,beneficiary_not_allowed
+"which card would i get, visa or mastercard?",visa_or_mastercard
+i paid with my card and was charged extra,card_payment_fee_charged
+why is there a fee when i thought there would be no fees?,card_payment_fee_charged
+can both visa and mastercard be chosen?,visa_or_mastercard
+i paid with card and was charged a fee that shouldn't be there!,card_payment_fee_charged
+"my phone was stolen yesterday, can you help me with this?",lost_or_stolen_phone
+my beneficiary is unable to transact,beneficiary_not_allowed
+is there a fee for sending additional cards?,getting_spare_card
+is there a way to revert a transaction?,cancel_transfer
+i would like to get both a visa and mastercard?,visa_or_mastercard
+i'm still waiting for my transaction.,supported_cards_and_currencies
+"hi, i am interested buying crypto currency but unable to purchase it through the application. i do want to do the exchange, could you please let me know what is the problem?",beneficiary_not_allowed
+how do i set up my apple pay watch to connect to my account,apple_pay_or_google_pay
+"if i order a new card, how much will it be and how long will it take me to get it?",card_about_to_expire
+i was mugged.  they took everything.  i can't use the app.  what do i do?,lost_or_stolen_phone
+how can i cancel this transaction?,cancel_transfer
+"i normally have no issues making transfers, so why am i suddenly being told it is not possible?",beneficiary_not_allowed
+"hi,  one of payment is still coming as pending for which i have already paid by card. i guess it did not processed, could you please check and update me.",lost_or_stolen_phone
+my app was on the phone and i was mugged.  what do i do?,lost_or_stolen_phone
+visa or mastercard?,visa_or_mastercard
+can i choose my visa or mastercard?,visa_or_mastercard
+"do i have to top up in euros if i use a card, or can i use a different currency?",supported_cards_and_currencies
+i need to get visa and mastercard,visa_or_mastercard
+can i use my mastercard to add money to my account,supported_cards_and_currencies
+"i think my card is expiring, what happens then?",card_about_to_expire
+"i have tried to submit a transfer a couple of times now, and for some reason, it continues to be unsuccessful. do you know why this may be?",beneficiary_not_allowed
+i do not want a visa card.,visa_or_mastercard
+i want to take back my transaction,cancel_transfer
+i was charged an extra fee for a card payment. i was unaware of these fees beforehand.,card_payment_fee_charged
