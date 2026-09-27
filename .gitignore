@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+
+# MLflow runtime data and generated outputs
+mlruns/
+mlartifacts/
+artifacts/
+data/raw/
+data/processed/
+
+# Editors and operating systems
+.vscode/
+.idea/
+Thumbs.db
