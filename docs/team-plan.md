@@ -4,7 +4,7 @@
 
 Each member presents for approximately one minute.
 
-1. Duarte: business problem and BankAssist Triage solution.
+1. Duarte: business problem, BankAssist Triage solution, presentation.
 2. Liliana: dataset, intent labels, splits, and evaluation approach.
 3. Cristiana: classifier pipeline and model-comparison results.
 4. Joana: MLflow experiments, registry, and `@champion` promotion.
