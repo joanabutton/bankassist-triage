@@ -1,11 +1,18 @@
-#ROUTING_MAP = {
-    # "intent_name": "Department"
-#}
+ROUTING_MAP = {
+    # Add team-approved intent → route mappings here
+}
 
 
-def get_destination(intent: str) -> str:
+CONFIDENCE_THRESHOLD = None
 
-    return ROUTING_MAP.get(
-        intent,
-        "Manual Review"
-    )
+
+def get_route(intent: str) -> str:
+    return ROUTING_MAP.get(intent, "Manual Review")
+
+
+def requires_human_review(confidence: float) -> bool:
+
+    if CONFIDENCE_THRESHOLD is None:
+        return True
+
+    return confidence < CONFIDENCE_THRESHOLD
