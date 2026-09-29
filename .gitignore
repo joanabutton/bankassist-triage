@@ -14,6 +14,7 @@ venv/
 mlruns/
 mlartifacts/
 artifacts/
+mlflow-data/
 data/raw/
 data/processed/
 

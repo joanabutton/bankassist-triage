@@ -55,6 +55,30 @@ pip install -r requirements.txt -r requirements-dev.txt
 The `.venv` folder is ignored by Git. Each team member should create it locally rather
 than commit it. Run `deactivate` when finished.
 
+## MLflow tracking for notebook 3
+
+Start the BankAssist MLflow service from the repository root:
+
+```powershell
+docker compose up -d mlflow
+```
+
+Open the MLflow UI at `http://localhost:5001`. Notebook 3 runs in the project's
+local Python environment and uses that address as its tracking URI. The SQLite
+database and logged model artifacts persist in `mlflow-data/`, which is ignored
+by Git. The project code belongs in Git; MLflow runs and registered models live
+in this local store.
+
+When the API joins this Compose project, it should use
+`MLFLOW_TRACKING_URI=http://mlflow:5000` inside Docker and load the registered
+model by its `@champion` alias. A process running directly on this computer
+should use `http://localhost:5001`. These addresses reach the same service.
+Other computers cannot reach this `localhost` server; use the same demo
+computer or arrange a shared server for a multi-computer demonstration.
+
+To stop the service without deleting its database or artifacts, run
+`docker compose down`.
+
 ## Five-day delivery plan
 
 1. Define the routing map, data split, metrics, and API contract.
