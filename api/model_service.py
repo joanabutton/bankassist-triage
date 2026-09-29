@@ -1,31 +1,31 @@
-from pathlib import Path
-import joblib
 import os
-from api.mock_model import MockModel
+import mlflow
+import mlflow.sklearn
 
-#MODEL_PATH = Path("models/champion_model.pkl")
+
+MODEL_URI = "models:/BankAssist-Intent-Classifier@champion"
 
 
 class ModelService:
 
     def __init__(self):
+        self.model = None
+        self.load_model()
 
-        use_mock = os.getenv(
-            "USE_MOCK_MODEL",
-            "true"
-        ).lower() == "true"
-
-        if use_mock:
-            self.model = MockModel()
-        else:
-            self.model = joblib.load(
-                "models/champion_model.pkl"
+    def load_model(self):
+        mlflow.set_tracking_uri(
+            os.getenv(
+                "MLFLOW_TRACKING_URI",
+                "http://localhost:5001"
             )
+        )
+
+        self.model = mlflow.sklearn.load_model(MODEL_URI)
 
     def is_loaded(self):
         return self.model is not None
 
-    def predict(self, message):
+    def predict(self, message: str):
 
         prediction = self.model.predict([message])[0]
 
