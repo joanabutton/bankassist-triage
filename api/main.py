@@ -1,14 +1,14 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.schemas import PredictionRequest, PredictionResponse
 from api.model_service import ModelService
-from api.routing import get_route, requires_human_review
+from api.schemas import PredictionRequest, PredictionResponse
 
 
 app = FastAPI(
     title="BankAssist Triage API",
-    version="1.0.0"
+    description="ML-powered bank customer query intent classification and routing API",
+    version="1.0.0",
 )
 
 app.add_middleware(
@@ -26,30 +26,24 @@ model_service = ModelService()
 def health():
     return {
         "status": "healthy",
-        "model_loaded": model_service.is_loaded()
+        "model_loaded": model_service.is_loaded(),
     }
 
 
 @app.post("/predict", response_model=PredictionResponse)
 def predict(request: PredictionRequest):
-
     try:
-        prediction = model_service.predict(request.message)
-
-        intent = prediction["intent"]
-        confidence = prediction["confidence"]
+        result = model_service.predict(request.message)
 
         return {
-            "intent": intent,
-            "confidence": confidence,
-            "route": get_route(intent),
-            "requires_human_review": requires_human_review(
-                confidence
-            )
+            "intent": result["intent"],
+            "confidence": result["confidence"],
+            "route": "Pending",
+            "requires_human_review": False,
         }
 
     except Exception as e:
         raise HTTPException(
             status_code=500,
-            detail=f"Prediction failed: {str(e)}"
+            detail=f"Prediction failed: {str(e)}",
         )
