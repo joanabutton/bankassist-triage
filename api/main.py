@@ -3,17 +3,17 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from api.schemas import PredictionRequest, PredictionResponse
 from api.model_service import ModelService
-from api.routing import get_destination
+from api.routing import get_route, requires_human_review
+
 
 app = FastAPI(
     title="BankAssist Triage API",
-    version="1.0.0",
-    description="API for classifying and routing banking customer queries."
+    version="1.0.0"
 )
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # restrict this after frontend deployment
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -30,27 +30,22 @@ def health():
     }
 
 
-@app.get("/")
-def root():
-    return {
-        "service": "BankAssist Triage API",
-        "status": "running"
-    }
-
-
 @app.post("/predict", response_model=PredictionResponse)
 def predict(request: PredictionRequest):
 
     try:
         prediction = model_service.predict(request.message)
 
-        destination = get_destination(prediction["intent"])
+        intent = prediction["intent"]
+        confidence = prediction["confidence"]
 
         return {
-            "message": request.message,
-            "intent": prediction["intent"],
-            "confidence": prediction["confidence"],
-            "destination": destination
+            "intent": intent,
+            "confidence": confidence,
+            "route": get_route(intent),
+            "requires_human_review": requires_human_review(
+                confidence
+            )
         }
 
     except Exception as e:
