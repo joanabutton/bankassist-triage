@@ -6,3 +6,5 @@ venv
 .gitignore
 .env
 .ipynb_checkpoints
+tests
+mlflow-data

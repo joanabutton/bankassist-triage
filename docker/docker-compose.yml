@@ -1,0 +1,24 @@
+services:
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v3.16.1
+    ports:
+      - "5001:5000"
+    volumes:
+      - ../mlflow-data/db:/mlflow/db
+      - ../mlflow-data/artifacts:/mlflow/artifacts
+      - ./start-mlflow.sh:/start-mlflow.sh:ro
+    user: "0:0"
+    command: ["bash", "/start-mlflow.sh"]
+    restart: unless-stopped
+
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    depends_on:
+      - mlflow
+    restart: unless-stopped
