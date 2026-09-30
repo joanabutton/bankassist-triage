@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-
+from api.routing import get_route, requires_human_review
 from api.model_service import ModelService
 from api.schemas import PredictionRequest, PredictionResponse
 
@@ -14,7 +14,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -35,11 +35,14 @@ def predict(request: PredictionRequest):
     try:
         result = model_service.predict(request.message)
 
+        intent = result["intent"]
+        confidence = result["confidence"]
+
         return {
-            "intent": result["intent"],
-            "confidence": result["confidence"],
-            "route": "Pending",
-            "requires_human_review": False,
+            "intent": intent,
+            "confidence": confidence,
+            "route": get_route(intent),
+            "requires_human_review": requires_human_review(confidence),
         }
 
     except Exception as e:
