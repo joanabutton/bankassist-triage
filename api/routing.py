@@ -17,7 +17,8 @@ ROUTING_MAP = {
 }
 
 
-CONFIDENCE_THRESHOLD = None
+# Replace this with the threshold agreed by your team.
+CONFIDENCE_THRESHOLD = 0.50
 
 
 def get_route(intent: str) -> str:
@@ -25,8 +26,4 @@ def get_route(intent: str) -> str:
 
 
 def requires_human_review(confidence: float) -> bool:
-
-    if CONFIDENCE_THRESHOLD is None:
-        return True
-
     return confidence < CONFIDENCE_THRESHOLD
