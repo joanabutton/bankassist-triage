@@ -1,5 +1,6 @@
 # Development-only tools.
 pytest==8.3.5
+httpx==0.28.1
 ruff==0.11.8
 fastapi
 uvicorn[standard]

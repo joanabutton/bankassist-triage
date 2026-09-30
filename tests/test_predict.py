@@ -20,4 +20,4 @@ def test_prediction():
 
     assert "intent" in data
     assert "confidence" in data
-    assert "destination" in data
+    assert "route" in data
