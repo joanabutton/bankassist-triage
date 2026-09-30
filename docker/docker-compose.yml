@@ -18,6 +18,7 @@ services:
     ports:
       - "8000:8000"
     environment:
+      MODEL_SOURCE: mlflow
       MLFLOW_TRACKING_URI: http://mlflow:5000
     depends_on:
       - mlflow
