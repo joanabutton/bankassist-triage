@@ -35,11 +35,14 @@ def predict(request: PredictionRequest):
     try:
         result = model_service.predict(request.message)
 
+        intent = result["intent"]
+        confidence = result["confidence"]
+
         return {
-            "intent": result["intent"],
-            "confidence": result["confidence"],
-            "route": "Pending",
-            "requires_human_review": False,
+            "intent": intent,
+            "confidence": confidence,
+            "route": get_route(intent),
+            "requires_human_review": requires_human_review(confidence),
         }
 
     except Exception as e:
