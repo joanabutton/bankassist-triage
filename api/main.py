@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-
+from api.routing import get_route, requires_human_review
 from api.model_service import ModelService
 from api.schemas import PredictionRequest, PredictionResponse
 
