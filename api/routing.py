@@ -18,7 +18,7 @@ ROUTING_MAP = {
 
 
 # Replace this with the threshold agreed by your team.
-CONFIDENCE_THRESHOLD = 0.30
+CONFIDENCE_THRESHOLD = 0.20
 
 
 def get_route(intent: str) -> str:
