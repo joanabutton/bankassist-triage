@@ -16,6 +16,8 @@ Train, evaluate, register, and serve a text classifier for the ten intents in th
 | Joana | MLflow tracking, registry, promotion gate |
 | Chetan | FastAPI service, simple interface, Docker and end-to-end test |
 
+**NOTE** this is just responsability assignment, we have all discussed and worked on all parts of the project.
+
 ## Product flow
 
 ```text
