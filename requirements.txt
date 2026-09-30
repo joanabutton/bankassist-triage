@@ -1,7 +1,7 @@
 # Shared runtime dependencies for the BankAssist classifier project.
 pandas==2.2.3
 numpy==2.2.5
-scikit-learn==1.6.1
+scikit-learn==1.9.0
 mlflow==3.16.1
 fastapi==0.115.12
 uvicorn[standard]==0.34.2
