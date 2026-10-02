@@ -18,6 +18,10 @@ mlflow-data/
 data/raw/
 data/processed/
 
+# Documentation files
+/docs/**/*.md
+/docs/**/*.html
+
 # Editors and operating systems
 .vscode/
 .idea/
