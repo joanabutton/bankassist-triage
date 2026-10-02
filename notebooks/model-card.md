@@ -29,7 +29,7 @@ Notebook 3 logs the data, parameters, metrics, confusion matrix, prediction samp
 
 In the **local MLflow registry state verified on 29/9/2026**, `BankAssist-Intent-Classifier` version 1 is `@champion`, linked to run `d8a6d09807e74267a643c038cb2ab659`. Registry version numbers and run IDs can differ on another computer. Local Docker Compose sets `MODEL_SOURCE=mlflow`, so its API loads `models:/BankAssist-Intent-Classifier@champion` at startup. The packaged deployment path uses `models/champion_model.pkl` when `MODEL_SOURCE=local`; a later alias change does not update that file. The packaged file's exact source run and export procedure have not been verified in this card.
 
-**Named human approver:** Joana Button. **Promotion date:** 29 September 2026.
+**Promotion date:** 29 September 2026.
 
 The project pins `scikit-learn==1.9.0` in `requirements.txt`. Reproduction uses the committed split CSVs and notebook 3; MLflow's local database and artifacts are not committed to Git.
 

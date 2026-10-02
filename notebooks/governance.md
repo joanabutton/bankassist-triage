@@ -170,7 +170,7 @@ This provides controlled model versioning and avoids uncontrolled model replacem
 
 The project maintains a [Model Card](model-card.md) for the selected Model A. It provides a concise reference for understanding the model's intended use, supporting evidence, limitations and safeguards. It defines the scope as academic support-message classification and suggested queue routing, and explicitly excludes credit, eligibility and customer-account decisions.
 
-The card brings together data-review and evaluation evidence, the documented champion version and source run, deployment paths, the named human approver and promotion date. It also identifies unresolved issues, including the unvalidated human-review threshold and packaged-model provenance. Detailed metrics, identifiers and operating rules are kept in the card rather than repeated here.
+The card brings together data-review and evaluation evidence, the documented champion version and source run, deployment paths, and the promotion date. The first prototype promotion was based on the technical gate, with no named human approver recorded. Future production promotions should include explicit human approval and record the approver. It also identifies unresolved issues, including the unvalidated human-review threshold and packaged-model provenance. Detailed metrics, identifiers and operating rules are kept in the card rather than repeated here.
 
 The Model Card complements **MLflow's technical experiment and registry records** and the **promotion decision record in [notebook 3](03_mlflow_experiments.ipynb)**, discussed in section 10. MLflow provides technical traceability; the card explains the model's use and limits; the decision record captures the evidence and reason for promotion. The card supports governance review and comparison with previous champions, while the live registry establishes the current alias and the deployment configuration determines which model the API loads.
 
@@ -812,8 +812,8 @@ Provides independent assurance over the effectiveness of governance and controls
 | Docker | ✓ Prototype | Hardened/scanned containers |
 | IAM/RBAC | Not implemented | Enterprise IAM |
 | Security testing | Not implemented | Required before deployment |
-| SIEM/SOC | Not implemented | Production monitoring |
-| Human oversight | Conceptual | Operational control |
+|SIEM/SOC | Not implemented | Production monitoring |
+| Human oversight | Review flag implemented; human-review workflow not implemented | Operational human-review control |
 | EU AI Act | Awareness | Formal assessment |
 | DORA | Awareness | ICT-risk/resilience framework |
 | Model monitoring | Limited | Continuous |
