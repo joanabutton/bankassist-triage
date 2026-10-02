@@ -2,21 +2,15 @@
 
 BankAssist Triage classifies incoming digital-banking support messages and routes them to the appropriate support queue. Requests with low confidence are escalated to a human reviewer.
 
+## Group
+
+Group 1: Chetan Bissessur · Cristiana Lavrador · Duarte Queirós · Joana Button · Liliana Gomes
+Module Machine Learning and Operation, Executive Masters in Business Analytics and AI, Porto Business School, 2026
+
 ## Project goal
 
 Train, evaluate, register, and serve a text classifier for the ten intents in the Cleanlab banking-intent-classification dataset. The project demonstrates a complete MLOps lifecycle with MLflow: experiment tracking, model registry, promotion through `@candidate` and `@champion`, and a served API.
 
-## Team
-
-| Member | Responsibility |
-| --- | --- |
-| Duarte | Business use case, routing map, presentation integration |
-| Liliana | Data preparation, exploratory analysis, stratified splits, evaluation data |
-| Cristiana | Text-classification models and performance comparison |
-| Joana | MLflow tracking, registry, promotion gate |
-| Chetan | FastAPI service, simple interface, Docker and end-to-end test |
-
-**NOTE** this is just responsability assignment, we have all discussed and worked on all parts of the project.
 
 ## Product flow
 
@@ -80,11 +74,3 @@ computer or arrange a shared server for a multi-computer demonstration.
 
 To stop the service without deleting its database or artifacts, run
 `docker compose down`.
-
-## Five-day delivery plan
-
-1. Define the routing map, data split, metrics, and API contract.
-2. Establish and log a baseline classifier.
-3. Compare model variants and integrate MLflow registry workflow.
-4. Serve the champion model, test the full path, and implement low-confidence escalation.
-5. Rehearse the five-minute group presentation and stabilise the demo.
